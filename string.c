@@ -53,14 +53,8 @@ int main(void) {
 		for (int i=0, min=0; word_array[i][0]!='\0'; i++) {
 			min=i;
 			for(int j=i+1; word_array[j][0]!='\0'; j++) {
-				if (word_array[min][0] > word_array[j][0])
+				if (strcmp(word_array[min], word_array[j])>0)
 					min=j;
-				 else if (word_array[min][0] == word_array[j][0])
-					if (word_array[min][1] > word_array[j][1])
-						min=j;
-					else if (word_array[min][1] == word_array[j][1])
-						if (word_array[min][2] > word_array[j][2])
-							min=j;
 			}
 			char temp[LEN];
 			strcpy(temp, word_array[i]);
