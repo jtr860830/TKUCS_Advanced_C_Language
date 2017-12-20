@@ -40,7 +40,7 @@ Int32 main (void) {
     Int32 i, flag;
     Buf* buf = (Buf*)malloc(sizeof(Int32)*TOTAL);
     
-    while (1) {        
+    while (1) {
         printf("Please enter (0) increasing or (1) descesing sort: ");
         scanf("%d", &flag);
         if (flag < 0 || flag > 1) {
@@ -61,7 +61,6 @@ Int32 main (void) {
         
         printf("    Result: ");
         printfSortedBuf(buf);
-        printf("\n\n");  
+        printf("\n\n");
     }
 }
-
